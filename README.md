@@ -9,7 +9,7 @@ pip install git+https://github.com/oven8/corde
 
 ## Features
 [`corde`](https://github.com/oven8/corde) can load multiple files at once
-```
+```python
 import corde as cd
 
 file_dir = '/home/user/Corsika_Files/'
@@ -21,16 +21,15 @@ Regeneration happens automatically on initialization!
 > Note that [`corde`](https://github.com/oven8/corde) can only read thin type binary files in CORSIKA.
 
 [`corde`](https://github.com/oven8/corde) also supports storing the regenerated data in HDF5 format
-```
+```python
 import corde as cd
 
 file_dir = '/home/user/Corsika_Files/'
 file_list = ['DAT000001','DAT000002','DAT000003','DAT000004','DAT000005','DAT000006','DAT000007','DAT000008','DAT000009','DAT000010']
 dethinner = cd.corsika_dethin(file_dir,file_list,storage='HDF5')
-
 ```
 The file structure for a single event is given below
-```
+```python
 Group: event1
   Dataset: azimuth | Shape: () | Type: float32
   Dataset: del_t | Shape: (3406,) | Type: float32
