@@ -6,3 +6,5 @@ __all__ = [
     "corsika_dethin",
     "hist"
 ]
+
+__version__ = "0.1.0"
